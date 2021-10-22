@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Heebo:wght@402;600&family=Roboto+Mono:wght@300;500&family=Sora:wght@200;500;600;800&display=swap');
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --primary-color: #4745F1;
+   --secondary-black: #0b1b06;
+   --secondary-gray: #636060;
+   --body-bg: #f0f0e0;
+ }
+
+body {
+   background-color: var(--body-bg);
+}
+
+
+
+ /* Navigation Bar */
+.nav__links li a {
+   font-family: 'Poppins', sans-serif;
+   font-weight: 600;
+   font-size: 16px;
+   color: #9e9e9e;
+   text-decoration: none;
+}
+
+header {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 50px 0%;
+}
+
+.nav__links li {
+   display: inline-block;
+   padding: 0px 20px;
+}
+
+.nav__links li a {
+   transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+   color: var(--primary-color);
+}
+
+/* Topics Dropdown */
+.links__dropdown li a {
+   color: white;
+   font-size: 14px;
+}
+
+nav ul li {
+   float: left;
+   list-style: none;
+   position: relative;
+}
+
+nav ul li ul a {
+   display: block;
+   font-family: 'Poppins';
+   padding: 22px 14px;
+}
+  
+nav ul li a {
+   display: block;
+   padding: 22px 14px;
+   text-decoration: none;
+}
+
+nav ul li ul {
+   display: none;
+   position: absolute;
+   background-color: rgb(97, 92, 93);
+   padding: 10px;
+   border-radius: 0px 0px 4px 4px;
+}
+
+nav ul li:hover ul {
+   display: block;
+}
+
+nav ul li ul li {
+   width: 200px;
+   border-radius: 4px;
+}
+
+nav ul li ul li a {
+   padding: 8px 14px;
+}
+
+nav ul li ul li a:hover {
+   background-color: #f3f3f3;
+}
+
+
+/* AI in Healthcare */
+#healthcare-topic {
+   background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url(./images/healthcare.jpeg);
+   width: 100%;
+   height: 60vh;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   padding-top: 40px;
+}
+
+#healthcare-topic h2 {
+   color: #fff;
+   font-size: 2.2rem;
+   font-family: 'Sora', sans-serif;
+   letter-spacing: 1px;
+}
+
+#healthcare-container {
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+   padding: 8vw;
+}
+
+/* CENTER */
+.healthcares {
+   max-width: 100%;
+   margin: auto;
+   padding: 10px;
+   margin: 30px 125px;
+}
+
+
+#healthcare-container .healthcares {
+   width: 60%;
+}
+
+#healthcare-container .healthcares img {
+   width: 100%;
+   border-radius: 19px;
+}
+
+#healthcare-container .healthcares .post {
+   padding-bottom: 60px;
+}
+
+#healthcare-container .healthcares .post h2 {
+   color: #29303B;
+   padding: 15px 0 10px 0;
+   font-family: 'Heebo';
+   font-weight: 600;
+}
+
+#healthcare-container .healthcares .post p {
+   color: #29303B;
+   padding-bottom: 20px;
+   font-family: 'Poppins', sans-serif;
+   font-size: 19px;
+   font-weight: 300;
+   
+  /* text-align: justify; */
+   text-justify: inter-word;
+}
+
+#healthcare-container .cate h2 {
+   padding-bottom: 7px;
+   width: 30%;
+   font-family: 'Sora';
+}
+
+#healthcare-container .cate a {
+   text-decoration: none;
+   color: #757373;
+   font-family: 'Sora';
+   font-weight: 500;
+   line-height: 45px;
+}
+
+#healthcare-container {
+   padding: 8vw 4vw;
+}
+
+@media only  screen and (max-width: 768px) {
+   #healthcare-container {
+      flex-direction: column;
+      margin: 0 auto;
+      margin-bottom: 44px;
+   }
+}
+
+
+
+/* AI in Education */
+#education-topic {
+   background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url(./images/educ.png);
+   width: 100%;
+   height: 60vh;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   padding-top: 40px;
+}
+
+#education-topic h2 {
+   color: #fff;
+   font-size: 2.2rem;
+   font-family: 'Sora';
+   letter-spacing: 1px;
+}
+
+/* CENTER */
+.educations {
+   max-width: 100%;
+   margin: 100px auto;
+   padding: 10px;
+   margin: 30px 125px;
+}
+
+
+#education-container .educations {
+   width: 60%;
+}
+
+#education-container .educations img {
+   width: 80%;
+   border-radius: 19px;
+   margin: 30px 125px;
+   
+}
+
+#education-container .educations .post {
+   padding-bottom: 20px;
+}
+
+#education-container .educations .post h2 {
+   color: #29303B;
+   font-size: 30px;
+   padding: 15px 0 10px 0;
+   font-family: 'Heebo', sans-serif;
+   font-weight: 600;
+}
+
+/* EDUCATION only */
+#education-container .educations .post h3 {
+   color: #29303B;
+   padding: 15px 0 10px 0;
+   font-size: 25px;
+   font-family: 'Heebo', sans-serif;
+}
+
+#education-container .educations .post p {
+   color: #29303B;
+   padding-bottom: 30px;
+   font-size: 19px;
+   font-family: 'Poppins';
+   font-weight: 400;
+}
+
+
+/* AI in Business */
+#business-topic {
+   background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url(/images/business.jpg);
+   width: 100%;
+   height: 60vh;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   padding-top: 40px;
+}
+
+#business-topic h2 {
+   color: #fff;
+   font-size: 2.2rem;
+   font-family: 'Sora';
+   letter-spacing: 1px;
+}
+
+/* CENTER */
+.business {
+   max-width: 960px;
+   margin: auto;
+   padding: 10px;
+   margin: 30px 125px;
+}
+
+/**/
+
+#business-container .business img {
+   width: 80%;
+   border-radius: 19px;
+   margin: 30px 125px;
+}
+
+#business-container .business .post {
+   padding-bottom: 20px;
+}
+
+#business-container .business .post h2 {
+   color: #29303B;
+   padding: 15px 0 10px 0;
+   font-family: 'Heebo', sans-serif;
+   font-weight: 600;
+}
+
+#business-container .business .post p {
+   color: #29303B;
+   padding-bottom: 30px;
+   font-size: 19px;
+   font-family: 'Poppins';
+   font-weight: 400;
+}
+
+.post a {
+   text-decoration: none;
+   color: rgb(76, 118, 209);
+}
+
+
+/* End of AI in Business */
+
+
+
+/* AI in Social Media */
+#media-topic {
+   background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url(/images/socmed.png);
+   width: 100%;
+   height: 60vh;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   padding-top: 40px;
+}
+
+#media-topic h2 {
+   color: #fff;
+   font-size: 2.2rem;
+   font-family: 'Sora';
+   letter-spacing: 1px;
+}
+
+
+/* CENTER */
+.media {
+   max-width: 960px;
+   margin: auto;
+   padding: 10px;
+   margin: 30px 125px;
+}
+#media-container .media img {
+   width: 80%;
+   border-radius: 19px;
+   margin: 30px 125px;
+}
+
+#media-container .media .post {
+   padding-bottom: 20px;
+}
+
+#media-container .media .post h2 {
+   color: #29303B;
+   padding: 15px 0 10px 0;
+   font-family: 'Heebo', sans-serif;
+   font-weight: 600;
+}
+
+#media-container .media .post p {
+   color: #29303B;
+   padding-bottom: 30px;
+   font-size: 19px;
+   font-family: 'Poppins';
+   font-weight: 400;
+}
+
+.post a {
+   text-decoration: none;
+   color: rgb(76, 118, 209);
+}
+/* End of AI in Social Media */
+

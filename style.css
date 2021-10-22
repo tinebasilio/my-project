@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Mono:wght@300;500&family=Sora:wght@200;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+   --primary-color: #4745F1;
+   --secondary-black: #0b1b06;
+   --secondary-gray: #636060;
+   --body-bg: #f0f0e0;
+ }
+
+ /* Navigation Bar */
+.nav__links li, a {
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+   color: #9e9e9e;
+   text-decoration: none;
+}
+
+header {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 50px 0%;
+}
+
+.nav__links li {
+   display: inline-block;
+   padding: 0px 20px;
+}
+
+.nav__links li a {
+   transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+   color: var(--primary-color);
+}
+
+/* Topics Dropdown */
+.links__dropdown li a {
+   color: white;
+   font-size: 14px;
+}
+
+nav ul li {
+   float: left;
+   list-style: none;
+   position: relative;
+}
+
+nav ul li ul a {
+   display: block;
+   font-family: verdana;
+   padding: 22px 14px;
+}
+  
+nav ul li a {
+   display: block;
+   padding: 22px 14px;
+   text-decoration: none;
+}
+
+nav ul li ul {
+   display: none;
+   position: absolute;
+   background-color: rgb(97, 92, 93);
+   padding: 10px;
+   border-radius: 0px 0px 4px 4px;
+}
+
+nav ul li:hover ul {
+   display: block;
+}
+
+nav ul li ul li {
+   width: 200px;
+   border-radius: 4px;
+}
+
+nav ul li ul li a {
+   padding: 8px 14px;
+}
+
+nav ul li ul li a:hover {
+   background-color: #f3f3f3;
+}
+
+
+ 
+/* Global Styles */
+html {
+   font-family: 'Roboto Mono', sans-serif;
+   font-size: 10px;
+}
+
+body {
+   background-color: var(--body-bg);
+}
+
+img {
+   width: 70%; /* DC */
+   height: 70%;
+}
+
+a {
+   color:black;
+   text-decoration: none;
+}
+
+p {
+   font-size: 1.6rem;
+   color: var(--secondary-gray);
+}
+
+section {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.container {
+   width: 60%; /* DC */
+   margin: 0 auto;
+   max-width: 1000px;
+}
+
+
+
+
+/* Hero Section */
+
+#hero {
+   height: 60vh;
+   width: 100%;
+   padding-top: 10rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#hero .container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#hero .container .left {
+   flex: 6;
+}
+
+#hero .container .right {
+   flex: 8;
+}
+
+#hero .left .subheading {
+   font-size: 1.8rem;
+   font-weight: 500;
+   text-transform: uppercase;
+   color: var(--secondary-black)
+}
+
+#hero .left .heading {
+   font-size: 6rem;
+   font-family: 'Sora', sans-serif;
+   font-weight: 900;
+}
+
+#hero .left .desc {
+   margin-top: 2.5rem;
+   max-width: 400px;
+
+}
+
+#hero .heading .wrapper {
+   color: var(--primary-color);
+}
+#hero .right {
+   text-align: right;
+}
+
+#hero .right img {
+   width: 100px;
+   max-width: 450px;
+   height: 600px;
+   object-fit: cover;
+   object-position: 50% 30%; /* DC */
+}
+
+@media only screen and (max-width: 900px) {
+   html {
+      font-size: 9px;
+   }
+
+   #hero .container {
+      flex-direction: column-reverse;
+   }
+
+   #hero .container .right {
+      text-align: center;
+      flex: 1;
+      margin-bottom: 2rem;
+   }
+
+   #hero .container .right img {
+      width: 100%;
+      height: 400px;
+   }
+
+   #hero .container .left {
+      text-align: center;
+      padding-right: 0;
+      flex: 1;
+      height: fit-content;
+   }
+
+   #hero .container .left .heading {
+      font-size: 4rem;
+      margin: 0 auto;
+   }
+
+   #hero .container .left .desc {
+      margin: 0 auto;
+      margin-top: 2rem;
+   }
+
+   #hero .container .right {
+      flex: 6;
+   }
+}
+/* End of Hero Section */
+
+
+
+/* What is AI Section */
+#services {
+   padding: 25rem 0; /* 15rem */
+}
+
+#services .all-items {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 1vw;
+}
+
+#services .item {
+   padding: 1.5rem;
+   border-radius: 12px;
+   transition: 0.3s ease background-color;
+}
+
+#services .item:nth-child(1):hover {
+   background-color: rgb(224, 236, 177);
+}
+#services .item:nth-child(2):hover {
+   background-color: rgb(238, 228, 195);
+}
+#services .item:nth-child(3):hover {
+   background-color: rgb(202, 201, 243);
+}
+
+#services .item .icon {
+   width: 100px;
+   height: 100px;
+   padding: .9rem;
+   margin-bottom: 1rem;
+}
+
+#services .item-heading {
+   font-weight: 500;
+   font-size: 1.9rem;
+   font-family: 'Poppins', sans-serif;
+   margin-bottom: 1.5rem;
+}
+
+#services .item-desc {
+   color: var(--secondary-gray)
+}
+
+#services .section-heading {
+   font-size: clamp(2rem, 10vw, 8rem);
+   text-transform: uppercase;
+   font-family: 'Sora';
+   letter-spacing: 0.2rem;
+   text-align: center;
+   position: relative;
+   margin-bottom: 10rem;
+}
+
+#services .section-heading::before {
+   content: 'What is AI';
+   position: absolute;
+   left: 2%;
+   top: -20%;
+   width: 100%;
+   text-align: center;
+   text-transform: uppercase;
+   font-family: 'Sora';
+   letter-spacing: 0.2rem;
+   color: transparent;
+   -webkit-text-stroke: 1.5px #a3a2f8;
+   z-index: -1;
+}
+
+@media only  screen and (max-width: 768px) {
+   #services .all-items {
+      flex-direction: column;
+      text-align: center;
+   }
+   #services .item .icon {
+      margin: 0 auto;
+      margin-bottom: 1rem;
+   }
+   #services .item {
+      margin: 2rem 0;
+   }
+   #services .item:nth-child(1) {
+      background-color: rgb(224, 236, 177);
+   }
+   #services .item:nth-child(2) {
+      background-color: rgb(238, 228, 195);
+   }
+   #services .item:nth-child(3) {
+      background-color: rgb(202, 201, 243);
+   }
+}
+/* End of What is AI Section */
+
+
+
+/* FAQ Section */
+#faqs {
+   padding: 15rem 0; /* 15rem */
+}
+
+#faqs .section-heading {
+   margin-top: -30rem;
+   font-size: clamp(2rem, 10vw, 8rem);
+   text-transform: uppercase;
+   font-family: 'Sora';
+   letter-spacing: 0.2rem;
+   text-align: center;
+   position: relative;
+   align-items: center;
+}
+
+#faqs .section-heading::before {
+   content: 'FAQ';
+   position: absolute;
+   left: 2%;
+   top: -20%;
+   width: 100%;
+   text-align: center;
+   text-transform: uppercase;
+   font-family: 'Sora';
+   letter-spacing: 0.2rem;
+   color: transparent;
+   -webkit-text-stroke: 1.5px #a3a2f8;
+   z-index: -1;
+}
+
+
+.accordion {
+   max-width: 650px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   overflow: hidden;
+   font-size: 1.9rem;
+   font-family: 'Poppins', sans-serif;
+   background:#7b79e9;
+   margin-bottom: 10rem;
+   margin: 100px auto;
+   
+}
+
+.accordion__label,
+.accordion__content {
+   padding: 14px 22px;
+}
+
+.accordion__label {
+   display: block;
+   font-weight: 500;
+   color: #fff;
+   cursor: pointer;
+   position: relative;
+}
+
+.accordion__label:hover {
+   background: rgba(0, 0, 0, 0.1)
+}
+
+.accordion__label::after {
+   content: "";
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   right: 20px;
+   width: 12px;
+   height: 6px;
+   background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+   background-size: contain;
+   transition: transform 0.4s;
+ }
+
+ .accordion__content {
+   background: #ffffff;
+   line-height: 1.6;
+   font-size: 0.85em;
+   display: none;
+ }
+
+ .accordion__input {
+   display: none;
+ }
+
+ .accordion__input:checked ~ .accordion__content {
+   display: block;
+ }
+ 
+.accordion__content p {
+   color: black;
+   font-family: 'Rubik';
+}
+
+.accordion__input:checked ~ .accordion__label::after {
+   transform: translateY(-50%) rotate(0.5turn);
+ }
+ 
+
+
+/* Footer */
+footer {
+   position: absolute;
+   background-color: rgb(38,50,56);
+   height: auto;
+   width: 100vw;
+   font-family: 'Sora', sans-serif;
+   padding-top: 40px;
+   color: #fff;
+}
+
+.footer-content {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+}
+
+.footer-content h3 {
+   font-size: 1.8rem;
+   font-weight: 400;
+   text-transform: capitalize;
+   line-height: 3rem;
+}
+
+.footer-content p {
+   color: white;
+   max-width: 500px;
+   margin: 10px auto;
+   line-height: 28px;
+   font-size: 14px;
+}
+
+.footer-bottom {
+   background: #b8b8f1;
+   width: 100vw;
+   padding: 20px 0;
+   text-align: center;
+}
+
+.footer-bottom {
+   font-size: 14px;
+   word-spacing: 2px;
+   text-transform: capitalize;
+}
+
+.footer-bottom span {
+   text-transform: uppercase;
+   opacity: .4;
+   font-weight: 200;
+}
